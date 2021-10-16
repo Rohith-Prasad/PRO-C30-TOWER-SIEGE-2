@@ -24,7 +24,7 @@ function preload() {
 
 function setup() {
 	createCanvas(800, 600);
-
+  
 
 	engine = Engine.create();
 	world = engine.world;
@@ -35,37 +35,37 @@ function setup() {
     miniG2= new Ground(330,450,250,20)
 
     block1=new Block(240,425,30,30)
-    block2=new Block2(270,425,30,30)
+    block2=new Block(270,425,30,30)
     block3=new Block(300,425,30,30)
-    block4=new Block2(330,425,30,30)
+    block4=new Block(330,425,30,30)
     block5=new Block(360,425,30,30)
-    block6=new Block2(390,425,30,30)
+    block6=new Block(390,425,30,30)
     block7=new Block(420,425,30,30)
 
     block8=new Block(270,395,30,30)
-    block9=new Block2(300,395,30,30)
+    block9=new Block(300,395,30,30)
     block10=new Block(330,395,30,30)
-    block11=new Block2(360,395,30,30)
+    block11=new Block(360,395,30,30)
     block12=new Block(390,395,30,30)
 
     block13=new Block(300,365,30,30)
-    block14=new Block2(330,365,30,30)
+    block14=new Block(330,365,30,30)
     block15=new Block(360,365,30,30)
 
     block16=new Block(330,335,30,30)
 
 
-    block17=new Block2(580,225,30,30)
+    block17=new Block(580,225,30,30)
     block18=new Block(610,225,30,30)
-    block19=new Block2(640,225,30,30)
+    block19=new Block(640,225,30,30)
     block20=new Block(670,225,30,30)
-    block21=new Block2(700,225,30,30)
+    block21=new Block(700,225,30,30)
 
-   block22=new Block2(610,195,30,30)
+   block22=new Block(610,195,30,30)
   block23=new Block(640,195,30,30)
-    block24=new Block2(670,195,30,30)
+    block24=new Block(670,195,30,30)
 
-    block25=new Block2(640,165,30,30)
+    block25=new Block(640,165,30,30)
 
   
 
@@ -84,12 +84,14 @@ function setup() {
 function draw() {
   rectMode(CENTER);
   background(rgb(146, 227, 102));
+  text('Drag The Polygon to Destroy the Box',100,100);
 
   ground.display()
   miniG.display()
   miniG2.display()
 
-  block1.display()
+  fill('red');
+  block1.display() 
   block2.display()
   block3.display()
   block4.display()
@@ -97,30 +99,35 @@ function draw() {
   block6.display()
   block7.display()
 
+  fill('yellow');
   block8.display()
   block9.display()
   block10.display()
   block11.display()
   block12.display()
 
+  fill('blue');
   block13.display()
   block14.display()
   block15.display()
 
+  fill('pink');
   block16.display()
 
 
-
+ fill('red');
   block17.display()
   block18.display()
   block19.display()
   block20.display()
   block21.display()
 
+  fill('yellow');
   block22.display()
   block23.display()
   block24.display()
 
+  fill('blue');
   block25.display()
 
   chain.display()
